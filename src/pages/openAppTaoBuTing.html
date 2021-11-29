@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link href="https://public.yuedaoec.com/css/mui.css" rel="stylesheet">
+  <script src="https://public.yuedaoec.com/js/mui.js?timr=2?timr=2"></script>
+  <title></title>
+</head>
+
+<body>
+<div style="position: absolute;top: 0;bottom: 0;width: 100%;">
+  <img src="https://resource.yuedaoec.com/image/openAppTaoBuTing/openAppTaoBuTing.png" width="100%" />
+</div>
+<div style="position: absolute;top: 50%;width: 100%;text-align: center;">
+  <!--  <div>-->
+  <!--    <div class="open" onclick="openLink()">-->
+  <!--      从庭秘密中打开链接-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <div>
+<!--    <div class="down" onclick="downLink()">-->
+<!--      Download-->
+<!--    </div>-->
+  </div>
+</div>
+</body>
+
+</html>
+<script>
+    let url = getUrlParam('url')
+
+    function openLink() {
+        console.log('ceshi')
+        location.href = `tinsecretapp://?url=${url}`
+    }
+    function downLink() {
+        console.log('down')
+        var u = navigator.userAgent
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1 //g
+        if(isAndroid) {
+            // if(u.indexOf('HUAWEI') != -1) { // 说明是华为手机
+            //   window.location.href = 'https://public.yuedaoec.com/apk/my/tinsecret_latest_release.apk'
+            // } else {
+            //   window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.tst.tinsecret&fromcase=40003'
+            // }
+            window.location.href = 'https://public.yuedaoec.com/apk/my/tinsecret_latest_release.apk'
+        }
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+        if(isIOS) {
+            location.href = 'https://itunes.apple.com/us/app/tst-malaysia/id1436120790'
+        }
+    }
+
+    function getUrlParam(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)')
+        var r = window.location.search.substr(1).match(reg)
+        if(r != null) return unescape(r[2])
+        return null
+    }
+</script>
+
+<style>
+  .open {
+    width: 160px;
+    padding: 10px;
+    margin: auto;
+    font-size: 15px;
+    background: #EA902F;
+    color: #FFFEFE;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .down {
+    width: 160px;
+    padding: 10px;
+    margin: auto;
+    font-size: 15px;
+    background: #EA342F;
+    color: #FFFEFE;
+    font-weight: 500;
+  }
+</style>

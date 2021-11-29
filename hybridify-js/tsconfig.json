@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "es2015",
+      "declaration": true,
+      "outDir": "./lib",
+      "strict": true,
+      "noImplicitAny": false,
+      "strictNullChecks":false,
+      "lib":["es5","dom","es6","es7"]
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "**/__tests__/*","**/__tests2__/*"]
+  }

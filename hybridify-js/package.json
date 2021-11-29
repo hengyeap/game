@@ -1,0 +1,46 @@
+{
+  "_args": [
+    [
+      "git+ssh://git@code.aliyun.com:tst-sku360/hybridify-js.git",
+      "/Users/jianyujie/Documents/Program/workspace/tbt-apph5-frontend"
+    ]
+  ],
+  "_from": "git+ssh://git@code.aliyun.com:tst-sku360/hybridify-js.git",
+  "_id": "hybridify-js@git+ssh://git@code.aliyun.com:tst-sku360/hybridify-js.git#4ca6beec91dfbfc780cf8b2e11c270a927e0fbdd",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/hybridify-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+ssh://git@code.aliyun.com:tst-sku360/hybridify-js.git",
+    "rawSpec": "git+ssh://git@code.aliyun.com:tst-sku360/hybridify-js.git",
+    "saveSpec": "git+ssh://git@code.aliyun.com:tst-sku360/hybridify-js.git",
+    "fetchSpec": "git@code.aliyun.com:tst-sku360/hybridify-js.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+ssh://git@code.aliyun.com:tst-sku360/hybridify-js.git#4ca6beec91dfbfc780cf8b2e11c270a927e0fbdd",
+  "_spec": "git+ssh://git@code.aliyun.com:tst-sku360/hybridify-js.git",
+  "_where": "/Users/jianyujie/Documents/Program/workspace/tbt-apph5-frontend",
+  "author": "",
+  "description": "为解决h5页面在多种不同环境下（ios，android，微信浏览器，微信小程序，普通浏览器）下hybrid开发体验不一致导致的代码无法共用的问题。 # 安装 ### NPM",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "./lib/index.js",
+  "name": "hybridify-js",
+  "repository": {
+    "type": "git",
+    "url": "git@code.aliyun.com:tst-sku360/hybridify-js.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.3.1"
+}
